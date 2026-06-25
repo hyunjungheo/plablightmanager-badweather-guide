@@ -462,7 +462,11 @@ body{font-family:'Pretendard Variable',Pretendard,-apple-system,'Apple SD Gothic
       <div style="display:flex;flex-direction:column;gap:8px;">
 
         <!-- 그룹 1: 최소 인원 확인됨 -->
-        <div style="font-size:11px;font-weight:700;color:#8B95A1;letter-spacing:.06em;padding:0 2px 4px;">최소 인원이 모였다면</div>
+        <div style="font-size:11px;font-weight:700;color:#8B95A1;letter-spacing:.06em;padding:0 2px 6px;">최소 인원이 모였다면</div>
+        <div style="display:flex;flex-wrap:wrap;gap:5px;margin-bottom:10px;padding:0 2px;">
+          <span style="padding:4px 11px;border-radius:999px;font-size:12px;font-weight:500;background:#F2F4F6;color:#4E5968;">모든 인원이 도착한 경우</span>
+          <span style="padding:4px 11px;border-radius:999px;font-size:12px;font-weight:500;background:#F2F4F6;color:#4E5968;">지각자 있어도 최소 인원 충족</span>
+        </div>
 
         <button class="branch-btn brand" onclick="goToStep3('proceed')">
           <div class="branch-icon brand">
@@ -471,7 +475,6 @@ body{font-family:'Pretendard Variable',Pretendard,-apple-system,'Apple SD Gothic
           <div style="flex:1">
             <div class="branch-label brand">정상 진행</div>
             <div class="branch-sub">매치를 시작해요</div>
-            <div style="font-size:11.5px;color:#8B95A1;margin-top:6px;line-height:1.65;">모든 인원 도착 · 지각자 있어도 최소 충족</div>
           </div>
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" style="flex-shrink:0;align-self:center;"><path d="M9 6l6 6-6 6" stroke="#1570FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
         </button>
@@ -488,10 +491,13 @@ body{font-family:'Pretendard Variable',Pretendard,-apple-system,'Apple SD Gothic
         </button>
 
         <!-- 구분선 -->
-        <div style="display:flex;align-items:center;gap:10px;padding:4px 0;">
+        <div style="display:flex;align-items:center;gap:10px;padding:6px 0 2px;">
           <div style="flex:1;height:1px;background:#ECEEF2;"></div>
           <div style="font-size:11px;font-weight:700;color:#8B95A1;letter-spacing:.06em;white-space:nowrap;">최소 인원이 모이지 않았다면</div>
           <div style="flex:1;height:1px;background:#ECEEF2;"></div>
+        </div>
+        <div style="display:flex;flex-wrap:wrap;gap:5px;margin-bottom:10px;padding:6px 2px 0;">
+          <span style="padding:4px 11px;border-radius:999px;font-size:12px;font-weight:500;background:#F2F4F6;color:#4E5968;">지각자가 있어 최소 인원 미만인 경우</span>
         </div>
 
         <!-- 그룹 2: 최소 인원 미달 -->
@@ -502,7 +508,6 @@ body{font-family:'Pretendard Variable',Pretendard,-apple-system,'Apple SD Gothic
           <div style="flex:1">
             <div class="branch-label" style="color:#B45309;">늦는 플래버가 있어요</div>
             <div class="branch-sub">최소 인원이 부족하면 기다려요</div>
-            <div style="font-size:11.5px;color:#8B95A1;margin-top:6px;line-height:1.65;">지각자가 있어 최소 인원 미만이 모인 경우</div>
           </div>
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" style="flex-shrink:0;align-self:center;"><path d="M9 6l6 6-6 6" stroke="#D97706" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
         </button>
