@@ -547,21 +547,17 @@ body{font-family:'Pretendard Variable',Pretendard,-apple-system,'Apple SD Gothic
           </button>
           <div class="collapse-body" id="c1-body">
             <div class="collapse-divider"></div>
-            <div class="risk-items">
-              <div class="risk-item normal">
-                <div class="risk-badge normal">1</div>
-                <div><div class="risk-item-title">도착하지 않은 플래버에게 안내</div><div class="risk-item-desc">아직 현장에 오지 않은 플래버에게 취소·중단 사실을 알려 주세요.</div></div>
-              </div>
-              <div class="risk-item normal">
-                <div class="risk-badge normal">2</div>
-                <div style="flex:1;">
-                  <div class="risk-item-title">구장 상태가 좋지 않아 취소됐다면 현장 사진 공유</div>
-                  <div class="risk-item-desc">현장 구장 상태가 좋지 않아 취소됐다면 구장 상태를 찍어 아래 경로를 통해 공유해 주세요.</div>
-                  <a href="https://plab-manager.channel.io/workflows/763593" target="_blank" style="display:flex;align-items:center;gap:6px;margin-top:10px;padding:10px 12px;border-radius:10px;background:#fff;border:1px solid #F2F4F6;text-decoration:none;">
-                    <span style="font-size:13px;font-weight:600;color:#191F28;flex:1;">현장 사진 전달하기</span>
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M9 6l6 6-6 6" stroke="#8B95A1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-                  </a>
+            <div class="check-bullets">
+              <div class="check-bullet">
+                <div class="check-dot ok"><svg width="10" height="10" viewBox="0 0 12 12"><path d="M2 6l3 3 5-6" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg></div>
+                <div>
+                  <div style="font-size:13.5px;font-weight:700;color:#191F28;line-height:1.5;letter-spacing:-.02em;margin-bottom:4px;">늦는 플래버가 있다면 현장에서 20분 간 대기</div>
+                  <div class="check-bullet-text">최소 인원이 모일 때까지 현장에서 미니 게임을 진행하고, 20분 이후 현장 취소 혹은 미니 게임 진행 여부를 결정해요.</div>
                 </div>
+              </div>
+              <div class="check-bullet">
+                <div class="check-dot ok"><svg width="10" height="10" viewBox="0 0 12 12"><path d="M2 6l3 3 5-6" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg></div>
+                <div class="check-bullet-text">매치가 현장 취소되었다면, 현장에서 20분 간 현장 정리 및 지각자를 안내하고 리포트를 작성하면 참가비와 동일한 금액의 포인트를 드려요.</div>
               </div>
             </div>
           </div>
@@ -610,47 +606,6 @@ body{font-family:'Pretendard Variable',Pretendard,-apple-system,'Apple SD Gothic
 
                 </div>
               </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="g8"></div>
-
-      <!-- 눈/비가 왔어요 체크 기준 -->
-      <div class="collapse-wrap">
-        <button class="collapse-trigger" onclick="toggleCollapse('c3')">
-          <div class="collapse-num icon" id="c3-num">🌧️</div>
-          <div class="collapse-label-wrap"><div class="collapse-title">눈/비가 왔어요 체크 기준</div></div>
-          <svg class="collapse-arrow" id="c3-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        </button>
-        <div class="collapse-body" id="c3-body">
-          <div class="collapse-divider"></div>
-          <div style="font-size:13px;color:#6B7684;line-height:1.6;margin-bottom:14px">아래 기준에 해당할 때만 강수 매치로 체크해 주세요.</div>
-          <div class="check-group-label">체크 기준</div>
-          <div class="check-bullets">
-            <div class="check-bullet">
-              <div class="check-dot ok"><svg width="10" height="10" viewBox="0 0 12 12"><path d="M2 6l3 3 5-6" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg></div>
-              <div class="check-bullet-text">최소 1쿼터 동안 시간당 1mm 이상의 비·눈이 내릴 때만 강수 매치로 체크해요.</div>
-            </div>
-            <div class="check-bullet">
-              <div class="check-dot no"><svg width="9" height="9" viewBox="0 0 12 12"><path d="M3 3l6 6M9 3l-6 6" stroke="#fff" stroke-width="2" stroke-linecap="round"/></svg></div>
-              <div class="check-bullet-text">실내 구장은 강수 매치로 적용되지 않아요.</div>
-            </div>
-            <div class="check-bullet">
-              <div class="check-dot ok"><svg width="10" height="10" viewBox="0 0 12 12"><path d="M2 6l3 3 5-6" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg></div>
-              <div class="check-bullet-text">강수로 취소·중단되어도 프로모션비와 긴급 양도비는 지급돼요.</div>
-            </div>
-          </div>
-          <div class="check-sep"></div>
-          <div class="check-group-label">주의사항</div>
-          <div class="risk-items">
-            <div class="risk-item normal">
-              <div class="risk-badge normal">1</div>
-              <div><div class="risk-item-title">강수 매치 체크하지 않으면 정산되지 않아요</div><div class="risk-item-desc">조건에 해당하면 꼭 체크해 주세요. 체크하지 않으면 정산에 반영되지 않아요.</div></div>
-            </div>
-            <div class="risk-item normal">
-              <div class="risk-badge normal">2</div>
-              <div><div class="risk-item-title">사실과 다르게 체크하면 경고를 받을 수 있어요</div><div class="risk-item-desc">사실과 다르게 체크하면 매치비 미정산과 함께 매니저 권한이 해지될 수 있어요.</div></div>
             </div>
           </div>
         </div>
