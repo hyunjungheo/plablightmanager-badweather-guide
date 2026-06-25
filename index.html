@@ -349,34 +349,16 @@ body{font-family:'Pretendard Variable',Pretendard,-apple-system,'Apple SD Gothic
       <div class="step-title">환불 기준</div>
       <div class="g20"></div>
 
-      <!-- 기본 환불 원칙 -->
-      <div style="font-size:11px;font-weight:700;color:#8B95A1;letter-spacing:.06em;text-transform:uppercase;margin-bottom:10px;">기본 원칙</div>
-      <div style="display:flex;flex-direction:column;gap:8px;margin-bottom:24px;">
-        <div style="padding:14px 16px;border-radius:14px;background:#FFF2F2;border:1.5px solid #FFD5D5;display:flex;align-items:center;gap:12px;">
-          <div style="width:32px;height:32px;border-radius:10px;background:#F04438;display:flex;align-items:center;justify-content:center;flex-shrink:0;">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M18 6L6 18M6 6l12 12" stroke="#fff" stroke-width="2.5" stroke-linecap="round"/></svg>
-          </div>
-          <div>
-            <div style="font-size:13px;font-weight:700;color:#F04438;margin-bottom:3px;">미도착 → 환불 불가</div>
-            <div style="font-size:13px;color:#4E5968;line-height:1.5;">현장에 도착하지 않은 플래버는 환불되지 않아요.</div>
-          </div>
-        </div>
-        <div style="padding:14px 16px;border-radius:14px;background:#F7F8FA;border:1px solid #ECEEF2;">
-          <div style="display:flex;align-items:center;gap:10px;margin-bottom:8px;">
-            <div style="width:32px;height:32px;border-radius:10px;background:#1570FF;display:flex;align-items:center;justify-content:center;flex-shrink:0;">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M9 12h6M9 16h4M5 4h14a2 2 0 012 2v14a2 2 0 01-2 2H5a2 2 0 01-2-2V6a2 2 0 012-2z" stroke="#fff" stroke-width="2" stroke-linecap="round"/></svg>
-            </div>
-            <div style="font-size:13px;font-weight:700;color:#191F28;">부분 중단 → 리포트 후 부분 환불</div>
-          </div>
-          <div style="font-size:13px;color:#4E5968;line-height:1.6;margin-bottom:8px;">현장 취소·진행 중단으로 정상 진행되지 못한 시간이 있다면 매치 리포트에 남겨주세요.</div>
-          <div style="padding:8px 12px;border-radius:8px;background:#EEF5FF;font-size:12.5px;font-weight:600;color:#1570FF;">→ 다음 날 오전, 해당 시간만큼 자동 환불</div>
-        </div>
+      <div class="refund-block" style="display:flex;flex-direction:column;gap:8px;margin-bottom:16px;">
+        <div style="display:flex;align-items:flex-start;gap:8px;"><span style="flex-shrink:0;color:#F04438;line-height:1.55;">•</span><div style="font-size:14px;font-weight:400;color:#191F28;line-height:1.55;letter-spacing:-.02em;">현장에 도착하지 않은 플래버는 환불되지 않아요.</div></div>
+        <div style="display:flex;align-items:flex-start;gap:8px;"><span style="flex-shrink:0;color:#F04438;line-height:1.6;">•</span><div style="font-size:14px;font-weight:400;color:#191F28;line-height:1.6;letter-spacing:-.02em;">매치가 현장 취소·진행 중/일부 시간 중단·인원 부족으로 인해 정상 진행되지 못한 시간이 있다면 매치 리포트에 남겨주세요. 리포트에 남겨주신 정상 진행되지 못한 시간 만큼 다음 날 오전 부분 환불돼요.</div></div>
       </div>
-
-      <!-- 개별 귀가 환불 기준 -->
-      <div style="font-size:11px;font-weight:700;color:#8B95A1;letter-spacing:.06em;text-transform:uppercase;margin-bottom:10px;">개별 귀가 기준</div>
-      <div style="font-size:13px;color:#4E5968;line-height:1.6;margin-bottom:6px;">알림톡 수신 시점에 따라 환불 기준이 달라져요.</div>
-      <div style="font-size:13px;color:#4E5968;line-height:1.6;margin-bottom:16px;">알림톡이 발송되지 않은 매치는 강수로 개별 귀가 시 미참여 시간만큼 환불돼요.</div>
+      <div style="font-size:13px;font-weight:700;color:#191F28;margin-bottom:12px;letter-spacing:-.02em;">알림톡 유형별 개별 귀가 환불 기준</div>
+      <div style="margin-top:8px;display:flex;flex-direction:column;gap:8px;">
+        <div style="display:flex;gap:8px;align-items:flex-start;font-size:13.5px;color:#191F28;line-height:1.65;"><span style="flex-shrink:0;">•</span><span>플래버가 알림톡을 수신한 시점에 따라 환불 기준이 달라져요.</span></div>
+        <div style="display:flex;gap:8px;align-items:flex-start;font-size:13.5px;color:#191F28;line-height:1.65;"><span style="flex-shrink:0;">•</span><span>알림톡이 발송되지 않은 매치는 강수로 개별 귀가 시 참여하지 않은 시간만큼 환불돼요.</span></div>
+      </div>
+      <div class="g20"></div>
       <div style="padding:16px;border-radius:16px;background:#F7F8FA;border:1px solid #ECEEF2;margin-bottom:10px;">
         <div style="display:flex;align-items:center;gap:8px;margin-bottom:12px">
           <span style="padding:4px 10px;border-radius:999px;font-size:11px;font-weight:800;background:#EEF5FF;color:#1570FF;">강수 예보 안내</span>
@@ -428,15 +410,20 @@ body{font-family:'Pretendard Variable',Pretendard,-apple-system,'Apple SD Gothic
         <div class="seq-item">
           <div class="seq-left"><div class="seq-badge" style="cursor:default;background:#0BA260;color:#fff;border-color:#0BA260;">3</div><div class="seq-line"></div></div>
           <div class="seq-right">
-            <div class="seq-title" style="color:#0BA260;">최소 인원이 모이면 정상 진행</div>
-            <div class="seq-desc">최소 인원이 충족되면 매치를 정상 진행해요.</div>
+            <div class="seq-title">최소 인원이 모였다면</div>
+            <div class="seq-desc" style="margin-bottom:8px;">매치를 정상 진행해요.</div>
+            <div style="display:flex;flex-direction:column;gap:5px;">
+              <div style="display:flex;align-items:flex-start;gap:6px;font-size:12.5px;color:#6B7684;line-height:1.55;"><span style="flex-shrink:0;color:#0BA260;font-weight:700;">·</span><span>모든 인원이 도착해 최소 인원이 모인 경우</span></div>
+              <div style="display:flex;align-items:flex-start;gap:6px;font-size:12.5px;color:#6B7684;line-height:1.55;"><span style="flex-shrink:0;color:#0BA260;font-weight:700;">·</span><span>지각자가 있어도 최소 인원이 모인 경우</span></div>
+            </div>
           </div>
         </div>
         <div class="seq-item">
           <div class="seq-left"><div class="seq-badge" style="cursor:default;background:#F04438;color:#fff;border-color:#F04438;">4</div></div>
           <div class="seq-right">
-            <div class="seq-title" style="color:#F04438;">매치 시작 20분 후에도 최소 인원이 모이지 않는다면</div>
-            <div class="seq-desc">현장 취소 혹은 미니 게임 진행 여부를 결정해요.</div>
+            <div class="seq-title">최소 인원이 모이지 않았다면</div>
+            <div class="seq-desc" style="margin-bottom:8px;">현장 취소 혹은 미니 게임 진행 여부를 결정해요.</div>
+            <div style="display:flex;align-items:flex-start;gap:6px;font-size:12.5px;color:#6B7684;line-height:1.55;"><span style="flex-shrink:0;color:#F04438;font-weight:700;">·</span><span>지각자가 있어 최소 인원 미만이 모인 경우</span></div>
           </div>
         </div>
       </div>
