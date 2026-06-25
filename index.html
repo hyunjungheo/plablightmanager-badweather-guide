@@ -280,16 +280,16 @@ body{font-family:'Pretendard Variable',Pretendard,-apple-system,'Apple SD Gothic
         <div class="seq-item">
           <div class="seq-left"><div class="seq-badge" id="sb2" onclick="toggleSeq(2)">2</div></div>
           <div class="seq-right" onclick="toggleSeq(2)">
-            <div class="seq-title">늦는 플래버에게 연락</div>
-            <div class="seq-desc">도착하지 않은 플래버에게 연락해 도착 시점을 확인해 주세요.</div>
+            <div class="seq-title">늦는 플래버가 있다면 현장에서 20분 간 대기</div>
+            <div class="seq-desc">최소 인원이 모일 때까지 현장에서 미니 게임을 진행하고, 20분 이후 현장 취소 혹은 미니 게임 진행 여부를 결정해요.</div>
           </div>
         </div>
       </div>
       <div class="g24"></div>
       <div class="sec-title" style="margin-bottom:12px">플래버 환불 규정</div>
-      <div class="refund-block" style="display:flex;align-items:center;gap:8px;">
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" style="flex-shrink:0;"><circle cx="12" cy="12" r="10" stroke="#F04438" stroke-width="2"/><path d="M12 8v4M12 16h.01" stroke="#F04438" stroke-width="2" stroke-linecap="round"/></svg>
-        <div class="refund-title">현장에 도착하지 않은 플래버는 환불되지 않아요.</div>
+      <div class="refund-block" style="display:flex;flex-direction:column;gap:8px;">
+        <div style="display:flex;align-items:flex-start;gap:8px;"><span style="flex-shrink:0;font-size:14px;font-weight:600;color:#F04438;">•</span><div class="refund-title">현장에 도착하지 않은 플래버는 환불되지 않아요.</div></div>
+        <div style="display:flex;align-items:flex-start;gap:8px;"><span style="flex-shrink:0;font-size:14px;font-weight:600;color:#F04438;">•</span><div class="refund-title">매치가 현장 취소·진행 중/일부 시간 중단·인원 부족으로 인해 정상 진행되지 못한 시간만큼 다음날 오전 부분 환불돼요.</div></div>
       </div>
       <button class="nav-row" onclick="goTo('s-refund')">
         <div class="nav-icon-wrap">
@@ -346,7 +346,7 @@ body{font-family:'Pretendard Variable',Pretendard,-apple-system,'Apple SD Gothic
       <div class="g20"></div>
       <div class="kicker">진행 결정</div>
       <div class="step-title">진행 여부를<br>결정해요</div>
-      <div class="step-desc">매니저 포함 도착 인원을 기준으로 매치 진행을 결정해요.</div>
+      <div class="step-desc">라이트 매니저 포함 도착 인원을 기준으로 매치 진행을 결정해요.</div>
       <div class="g16"></div>
 
       <!-- 판정 기준 3열 -->
@@ -653,41 +653,6 @@ body{font-family:'Pretendard Variable',Pretendard,-apple-system,'Apple SD Gothic
         </div>
       </div>
       <div class="g8"></div>
-
-      <!-- 정산 기준 -->
-      <div class="collapse-wrap">
-        <button class="collapse-trigger" onclick="toggleCollapse('c4')">
-          <div class="collapse-num icon" id="c4-num">💰</div>
-          <div class="collapse-label-wrap"><div class="collapse-title">정산 기준</div></div>
-          <svg class="collapse-arrow" id="c4-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        </button>
-        <div class="collapse-body" id="c4-body">
-          <div class="collapse-divider"></div>
-          <div class="settle-group">
-            <div class="settle-group-label">현장 취소</div>
-            <div class="settle-wrap">
-              <div class="settle-row">
-                <div class="settle-sign info">×</div>
-                <div style="flex:1;min-width:0"><div class="settle-label" style="flex:none">모든 매치 타입</div><div class="settle-sub">강수로 매치가 현장 취소된 경우</div></div>
-                <div class="settle-amount neutral">10,000원</div>
-              </div>
-            </div>
-          </div>
-          <div class="settle-group">
-            <div class="settle-group-label">시간별 진행</div>
-            <div class="settle-wrap">
-              <div class="settle-row"><div class="settle-sign minus">−</div><div class="settle-label">30분 미만 진행</div><div class="settle-amount minus">-10,000원</div></div>
-              <div class="settle-row"><div class="settle-sign minus">−</div><div class="settle-label">30분 ~ 1시간 30분 미만</div><div class="settle-amount minus">-5,000원</div></div>
-              <div class="settle-row"><div class="settle-sign eq">=</div><div class="settle-label">1시간 30분 이상 진행</div><div class="settle-amount neutral">기본 매치비</div></div>
-              <div class="settle-row">
-                <div class="settle-sign plus">+</div>
-                <div style="flex:1;min-width:0"><div class="settle-label" style="flex:none">2시간 정상 진행</div><div class="settle-sub"><span style="display:inline-flex;align-items:center;gap:3px;padding:1px 7px 1px 5px;border-radius:999px;border:1px solid #E5E8EB;background:#F2F4F6;font-size:10.5px;font-weight:400;color:#8B95A1;">🌧️ 눈/비가 왔어요</span> 체크 필수</div><div style="font-size:11.5px;color:#8B95A1;margin-top:3px;line-height:1.5;">최소 1쿼터 동안 1mm 이상 강수 시 체크</div></div>
-                <div class="settle-amount plus">+5,000원</div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
 
       <div class="spacer"></div>
     </div>
