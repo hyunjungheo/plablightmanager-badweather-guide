@@ -398,28 +398,28 @@ body{font-family:'Pretendard Variable',Pretendard,-apple-system,'Apple SD Gothic
           <div class="seq-left"><div class="seq-badge" style="cursor:default;">1</div><div class="seq-line"></div></div>
           <div class="seq-right">
             <div class="seq-title">20분까지 대기해요</div>
-            <div class="seq-desc">늦는 플래버가 있다면 매치 시작 후 20분까지 대기해요.</div>
+            <div class="seq-desc">최소 인원이 부족하다면 매치 시작 후 20분까지 기다려요.</div>
           </div>
         </div>
         <div class="seq-item">
           <div class="seq-left"><div class="seq-badge" style="cursor:default;">2</div><div class="seq-line"></div></div>
           <div class="seq-right">
             <div class="seq-title">미니 게임 또는 대기</div>
-            <div class="seq-desc">최소 인원이 모일 때까지 현장에서 미니 게임을 진행하거나 현장에서 기다려요.</div>
+            <div class="seq-desc">최소 인원이 모일 때까지 현장에서 미니 게임을 진행하거나 기다려요.</div>
           </div>
         </div>
         <div class="seq-item">
-          <div class="seq-left"><div class="seq-badge" style="cursor:default;background:#0BA260;">3</div><div class="seq-line"></div></div>
+          <div class="seq-left"><div class="seq-badge" style="cursor:default;background:#0BA260;color:#fff;border-color:#0BA260;">3</div><div class="seq-line"></div></div>
           <div class="seq-right">
             <div class="seq-title" style="color:#0BA260;">최소 인원이 모이면 정상 진행</div>
             <div class="seq-desc">최소 인원이 충족되면 매치를 정상 진행해요.</div>
           </div>
         </div>
         <div class="seq-item">
-          <div class="seq-left"><div class="seq-badge" style="cursor:default;background:#F04438;">4</div></div>
+          <div class="seq-left"><div class="seq-badge" style="cursor:default;background:#F04438;color:#fff;border-color:#F04438;">4</div></div>
           <div class="seq-right">
             <div class="seq-title" style="color:#F04438;">20분 경과 후 진행 여부 결정</div>
-            <div class="seq-desc">지각자가 도착하지 않는다면, 20분 이후 현장 취소 혹은 미니 게임 진행 여부를 결정해요.</div>
+            <div class="seq-desc">20분이 지나도 최소 인원이 모이지 않는다면 현장 취소 혹은 미니 게임 진행 여부를 결정해요.</div>
           </div>
         </div>
       </div>
@@ -461,7 +461,7 @@ body{font-family:'Pretendard Variable',Pretendard,-apple-system,'Apple SD Gothic
           </div>
           <div style="flex:1">
             <div class="branch-label" style="color:#B45309;">늦는 플래버가 있어요</div>
-            <div class="branch-sub">늦는 플래버로 최소 인원이 부족하다면 현장에서 대기해요.</div>
+            <div class="branch-sub">늦는 플래버로 최소 인원이 부족하면 기다려요.</div>
           </div>
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M9 6l6 6-6 6" stroke="#D97706" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
         </button>
@@ -691,7 +691,7 @@ body{font-family:'Pretendard Variable',Pretendard,-apple-system,'Apple SD Gothic
 </div>
 
 <script>
-const CTA={'s-step1':{label:'다음 — 진행 결정',next:'s-step2',style:'tertiary'},'s-step3':{label:'가이드 마치기',next:'s-intro',style:'primary',noArrow:true}};
+const CTA={'s-step1':{label:'다음 — 진행 결정',next:'s-step2',style:'tertiary'},'s-step3':{label:'가이드 마치기',next:'s-intro',style:'primary',noArrow:true},'s-waiting':{label:'가이드 마치기',next:'s-intro',style:'primary',noArrow:true}};
 const HDR={'s-step1':{type:'step',n:1,label:'출석 확인'},'s-step2':{type:'step',n:2,label:'진행 결정'},'s-step3':{type:'step',n:3,label:'매치 정리'},'s-step3-select':{type:'step',n:3,label:'매치 정리'},'s-refund':{type:'sub',title:'환불 규정'},'s-waiting':{type:'sub',title:'대기 안내'},'s-intro':{type:'intro'}};
 let history=['s-intro'];
 function goTo(id){const cur=history[history.length-1];document.getElementById(cur).classList.remove('active');history.push(id);document.getElementById(id).classList.add('active');document.getElementById('scr').scrollTop=0;updateHeader(id);updateFooter(id);}
