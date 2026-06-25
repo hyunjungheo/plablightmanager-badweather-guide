@@ -349,39 +349,54 @@ body{font-family:'Pretendard Variable',Pretendard,-apple-system,'Apple SD Gothic
       <div class="step-title">환불 기준</div>
       <div class="g20"></div>
 
-      <div class="refund-block" style="display:flex;flex-direction:column;gap:8px;margin-bottom:16px;">
-        <div style="display:flex;align-items:flex-start;gap:8px;"><span style="flex-shrink:0;color:#F04438;line-height:1.55;">•</span><div style="font-size:14px;font-weight:400;color:#191F28;line-height:1.55;letter-spacing:-.02em;">현장에 도착하지 않은 플래버는 환불되지 않아요.</div></div>
-        <div style="display:flex;align-items:flex-start;gap:8px;"><span style="flex-shrink:0;color:#F04438;line-height:1.6;">•</span><div style="font-size:14px;font-weight:400;color:#191F28;line-height:1.6;letter-spacing:-.02em;">매치가 현장 취소·진행 중/일부 시간 중단·인원 부족으로 인해 정상 진행되지 못한 시간이 있다면 매치 리포트에 남겨주세요. 리포트에 남겨주신 정상 진행되지 못한 시간 만큼 다음 날 오전 부분 환불돼요.</div></div>
-      </div>
-      <div style="height:1px;background:#ECEEF2;margin-bottom:20px;"></div>
-      <div style="font-size:16px;font-weight:800;color:#191F28;margin-bottom:10px;letter-spacing:-.03em;">알림톡 유형별<br>개별 귀가 환불 기준</div>
-      <div style="margin-top:8px;display:flex;flex-direction:column;gap:8px;">
-        <div style="display:flex;gap:8px;align-items:flex-start;font-size:13.5px;color:#191F28;line-height:1.65;"><span style="flex-shrink:0;">•</span><span>플래버가 알림톡을 수신한 시점에 따라 환불 기준이 달라져요.</span></div>
-        <div style="display:flex;gap:8px;align-items:flex-start;font-size:13.5px;color:#191F28;line-height:1.65;"><span style="flex-shrink:0;">•</span><span>알림톡이 발송되지 않은 매치는 강수로 개별 귀가 시 참여하지 않은 시간만큼 환불돼요.</span></div>
-      </div>
-      <div class="g20"></div>
-      <div style="padding:16px;border-radius:16px;background:#EEF5FF;border:1.5px solid #C5D8FF;margin-bottom:10px;">
-        <div style="display:flex;align-items:center;gap:8px;margin-bottom:12px">
-          <span style="padding:4px 10px;border-radius:999px;font-size:11px;font-weight:800;background:#1570FF;color:#fff;">강수 예보 안내</span>
-          <span style="font-size:11.5px;color:#4E5968;font-weight:600;">매치 시작 4시간 이내 ~ 2시간 전</span>
+      <!-- 기본 환불 규정 -->
+      <div style="display:flex;flex-direction:column;gap:10px;margin-bottom:20px;">
+        <div style="display:flex;align-items:flex-start;gap:8px;">
+          <span style="flex-shrink:0;color:#191F28;line-height:1.55;">•</span>
+          <div style="font-size:14px;color:#191F28;line-height:1.55;letter-spacing:-.02em;">현장에 도착하지 않은 플래버는 환불되지 않아요.</div>
         </div>
-        <div style="background:#fff;border-radius:10px;padding:12px 12px 8px;margin-bottom:12px;"><svg width="100%" viewBox="0 0 290 56" style="display:block"><line x1="14" y1="36" x2="276" y2="36" stroke="#D1D5DB" stroke-width="1.5" stroke-linecap="round"/><rect x="14" y="28" width="131" height="16" rx="8" fill="#E8F1FF"/><line x1="22" y1="36" x2="137" y2="36" stroke="#1570FF" stroke-width="3" stroke-linecap="round"/><circle cx="14" cy="36" r="3.5" fill="#fff" stroke="#1570FF" stroke-width="1.5"/><circle cx="145" cy="36" r="3.5" fill="#fff" stroke="#1570FF" stroke-width="1.5"/><circle cx="276" cy="36" r="3.5" fill="#1570FF" stroke="#1570FF" stroke-width="1.5"/><text x="14" y="52" fill="#8B95A1" font-size="10" font-weight="600" text-anchor="middle">4시간 전</text><text x="145" y="52" fill="#8B95A1" font-size="10" font-weight="600" text-anchor="middle">2시간 전</text><text x="276" y="52" fill="#8B95A1" font-size="10" font-weight="600" text-anchor="middle">매치 시작</text><text x="79" y="20" fill="#1570FF" font-size="10.5" font-weight="800" text-anchor="middle">수신 시간</text></svg></div>
-        <div style="font-size:12.5px;color:#6B7684;line-height:1.6;margin-bottom:12px">구장 주소 기준 시간당 1mm 이상 강수 예보가 확인되면 발송돼요.</div>
-        <div style="padding:10px 12px;border-radius:10px;background:#FFF3F2;border:1px solid #FFD5D5;display:flex;align-items:center;gap:8px;">
-          <div style="width:18px;height:18px;border-radius:999px;background:#F04438;display:flex;align-items:center;justify-content:center;flex-shrink:0;"><svg width="9" height="9" viewBox="0 0 12 12"><path d="M3 3l6 6M9 3l-6 6" stroke="#fff" stroke-width="2" stroke-linecap="round"/></svg></div>
-          <div style="font-size:13px;font-weight:700;color:#F04438;">개별 귀가 시 환불 불가</div>
+        <div style="display:flex;align-items:flex-start;gap:8px;">
+          <span style="flex-shrink:0;color:#191F28;line-height:1.6;">•</span>
+          <div style="font-size:14px;color:#191F28;line-height:1.6;letter-spacing:-.02em;">매치가 현장 취소·진행 중/일부 시간 중단·인원 부족으로 인해 정상 진행되지 못한 시간이 있다면 매치 리포트에 남겨주세요.<br>리포트에 남겨주신 정상 진행되지 못한 시간 만큼 다음 날 오전 부분 환불돼요.</div>
         </div>
       </div>
-      <div style="padding:16px;border-radius:16px;background:#FFF2F2;border:1.5px solid #FFD5D5;margin-bottom:10px;">
-        <div style="display:flex;align-items:center;gap:8px;margin-bottom:12px">
-          <span style="padding:4px 10px;border-radius:999px;font-size:11px;font-weight:800;background:#F04438;color:#fff;">강수 예보 변동 안내</span>
-          <span style="font-size:11.5px;color:#4E5968;font-weight:600;">매치 시작 2시간 이내</span>
-        </div>
-        <div style="background:#fff;border-radius:10px;padding:12px 12px 8px;margin-bottom:12px;"><svg width="100%" viewBox="0 0 290 56" style="display:block"><line x1="14" y1="36" x2="276" y2="36" stroke="#D1D5DB" stroke-width="1.5" stroke-linecap="round"/><rect x="145" y="28" width="131" height="16" rx="8" fill="#FFECEC"/><line x1="153" y1="36" x2="268" y2="36" stroke="#F04438" stroke-width="3" stroke-linecap="round"/><circle cx="14" cy="36" r="3.5" fill="#fff" stroke="#F04438" stroke-width="1.5"/><circle cx="145" cy="36" r="3.5" fill="#fff" stroke="#F04438" stroke-width="1.5"/><circle cx="276" cy="36" r="3.5" fill="#F04438" stroke="#F04438" stroke-width="1.5"/><text x="14" y="52" fill="#8B95A1" font-size="10" font-weight="600" text-anchor="middle">4시간 전</text><text x="145" y="52" fill="#8B95A1" font-size="10" font-weight="600" text-anchor="middle">2시간 전</text><text x="276" y="52" fill="#8B95A1" font-size="10" font-weight="600" text-anchor="middle">매치 시작</text><text x="211" y="20" fill="#F04438" font-size="10.5" font-weight="800" text-anchor="middle">수신 시간</text></svg></div>
-        <div style="font-size:12.5px;color:#6B7684;line-height:1.6;margin-bottom:12px">구장 주소 기준 시간당 1mm 이상 강수 예보가 확인되면 발송돼요.</div>
-        <div style="padding:10px 12px;border-radius:10px;background:#EDFBF4;border:1px solid #C3F0D5;display:flex;align-items:center;gap:8px;">
-          <div style="width:18px;height:18px;border-radius:999px;background:#0BA260;display:flex;align-items:center;justify-content:center;flex-shrink:0;"><svg width="10" height="10" viewBox="0 0 12 12"><path d="M2 6l3 3 5-6" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg></div>
-          <div style="font-size:13px;font-weight:700;color:#0BA260;">개별 귀가 시 미참여 시간만큼 환불</div>
+      <div style="height:1px;background:#ECEEF2;margin-bottom:16px;"></div>
+
+      <!-- 알림톡 유형별 토글 -->
+      <div class="collapse-wrap">
+        <button class="collapse-trigger" onclick="toggleCollapse('cr')">
+          <div class="collapse-num ref" style="font-size:12px;color:#fff;">i</div>
+          <div class="collapse-label-wrap"><div class="collapse-title" style="font-weight:600;">알림톡 유형별 개별 귀가 환불 기준</div></div>
+          <svg class="collapse-arrow" id="cr-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div class="collapse-body" id="cr-body">
+          <div class="collapse-divider"></div>
+          <div style="display:flex;flex-direction:column;gap:6px;margin-bottom:16px;">
+            <div style="font-size:13px;color:#4E5968;line-height:1.65;">• 알림톡 수신 시점에 따라 환불 기준이 달라져요.</div>
+            <div style="font-size:13px;color:#4E5968;line-height:1.65;">• 알림톡이 발송되지 않은 매치는 강수로 개별 귀가 시 참여하지 않은 시간만큼 환불돼요.</div>
+          </div>
+
+          <!-- 강수 예보 안내 카드 (neutral) -->
+          <div style="padding:16px;border-radius:14px;background:#F7F8FA;border:1px solid #ECEEF2;margin-bottom:10px;">
+            <div style="display:flex;align-items:center;gap:8px;margin-bottom:12px;">
+              <span style="padding:3px 10px;border-radius:999px;font-size:11px;font-weight:700;background:#191F28;color:#fff;">강수 예보 안내</span>
+              <span style="font-size:11.5px;color:#6B7684;font-weight:500;">4시간 이내 ~ 2시간 전 수신</span>
+            </div>
+            <div style="background:#fff;border-radius:10px;padding:12px 12px 8px;margin-bottom:12px;"><svg width="100%" viewBox="0 0 290 56" style="display:block"><line x1="14" y1="36" x2="276" y2="36" stroke="#D1D5DB" stroke-width="1.5" stroke-linecap="round"/><rect x="14" y="28" width="131" height="16" rx="8" fill="#E8F1FF"/><line x1="22" y1="36" x2="137" y2="36" stroke="#1570FF" stroke-width="3" stroke-linecap="round"/><circle cx="14" cy="36" r="3.5" fill="#fff" stroke="#1570FF" stroke-width="1.5"/><circle cx="145" cy="36" r="3.5" fill="#fff" stroke="#1570FF" stroke-width="1.5"/><circle cx="276" cy="36" r="3.5" fill="#1570FF" stroke="#1570FF" stroke-width="1.5"/><text x="14" y="52" fill="#8B95A1" font-size="10" font-weight="600" text-anchor="middle">4시간 전</text><text x="145" y="52" fill="#8B95A1" font-size="10" font-weight="600" text-anchor="middle">2시간 전</text><text x="276" y="52" fill="#8B95A1" font-size="10" font-weight="600" text-anchor="middle">매치 시작</text><text x="79" y="20" fill="#1570FF" font-size="10.5" font-weight="800" text-anchor="middle">수신 시간</text></svg></div>
+            <div style="font-size:12.5px;color:#6B7684;line-height:1.6;margin-bottom:10px;">구장 주소 기준 시간당 1mm 이상 강수 예보가 확인되면 발송돼요.</div>
+            <div style="font-size:13px;font-weight:700;color:#191F28;">→ 개별 귀가 시 환불 불가</div>
+          </div>
+
+          <!-- 강수 예보 변동 안내 카드 (neutral) -->
+          <div style="padding:16px;border-radius:14px;background:#F7F8FA;border:1px solid #ECEEF2;margin-bottom:4px;">
+            <div style="display:flex;align-items:center;gap:8px;margin-bottom:12px;">
+              <span style="padding:3px 10px;border-radius:999px;font-size:11px;font-weight:700;background:#191F28;color:#fff;">강수 예보 변동 안내</span>
+              <span style="font-size:11.5px;color:#6B7684;font-weight:500;">매치 시작 2시간 이내 수신</span>
+            </div>
+            <div style="background:#fff;border-radius:10px;padding:12px 12px 8px;margin-bottom:12px;"><svg width="100%" viewBox="0 0 290 56" style="display:block"><line x1="14" y1="36" x2="276" y2="36" stroke="#D1D5DB" stroke-width="1.5" stroke-linecap="round"/><rect x="145" y="28" width="131" height="16" rx="8" fill="#E8F1FF"/><line x1="153" y1="36" x2="268" y2="36" stroke="#1570FF" stroke-width="3" stroke-linecap="round"/><circle cx="14" cy="36" r="3.5" fill="#fff" stroke="#1570FF" stroke-width="1.5"/><circle cx="145" cy="36" r="3.5" fill="#fff" stroke="#1570FF" stroke-width="1.5"/><circle cx="276" cy="36" r="3.5" fill="#1570FF" stroke="#1570FF" stroke-width="1.5"/><text x="14" y="52" fill="#8B95A1" font-size="10" font-weight="600" text-anchor="middle">4시간 전</text><text x="145" y="52" fill="#8B95A1" font-size="10" font-weight="600" text-anchor="middle">2시간 전</text><text x="276" y="52" fill="#8B95A1" font-size="10" font-weight="600" text-anchor="middle">매치 시작</text><text x="211" y="20" fill="#1570FF" font-size="10.5" font-weight="800" text-anchor="middle">수신 시간</text></svg></div>
+            <div style="font-size:12.5px;color:#6B7684;line-height:1.6;margin-bottom:10px;">구장 주소 기준 시간당 1mm 이상 강수 예보가 확인되면 발송돼요.</div>
+            <div style="font-size:13px;font-weight:700;color:#191F28;">→ 개별 귀가 시 미참여 시간만큼 환불</div>
+          </div>
         </div>
       </div>
       <div class="spacer"></div>
