@@ -279,7 +279,8 @@ body{font-family:'Pretendard Variable',Pretendard,-apple-system,'Apple SD Gothic
         <div class="seq-item">
           <div class="seq-left"><div class="seq-badge" id="sb2" onclick="toggleSeq(2)">2</div></div>
           <div class="seq-right" onclick="toggleSeq(2)">
-            <div class="seq-title">현장에 도착한 인원에 따라 진행 내용을 결정해요.</div>
+            <div class="seq-title">진행 내용 결정</div>
+            <div class="seq-desc">현장에 도착한 인원에 따라 진행 내용을 결정해요.</div>
           </div>
         </div>
       </div>
@@ -287,11 +288,12 @@ body{font-family:'Pretendard Variable',Pretendard,-apple-system,'Apple SD Gothic
       <div class="collapse-wrap">
         <button class="collapse-trigger" onclick="toggleCollapse('cp')">
           <div class="collapse-num ref" style="font-size:12px;color:#fff;">i</div>
-          <div class="collapse-label-wrap"><div class="collapse-title" style="font-weight:600;">인원 판정 도우미</div></div>
+          <div class="collapse-label-wrap"><div class="collapse-title" style="font-weight:600;">진행 판정 도우미</div></div>
           <svg class="collapse-arrow" id="cp-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
         </button>
         <div class="collapse-body" id="cp-body">
           <div class="collapse-divider"></div>
+          <div style="font-size:13px;color:#6B7684;line-height:1.6;margin-bottom:12px;">라이트 매니저 포함 도착 인원을 기준으로 매치 진행을 결정해요.</div>
           <div class="verdict-rows">
             <div class="verdict-row success"><div class="vr-tag success">최소 이상</div><div class="vr-title">정상 진행</div></div>
             <div class="verdict-row warn"><div class="vr-tag warn">최소 미만</div><div class="vr-title">미니 게임 전환</div><div class="vr-desc">5v5·6v6만 가능</div></div>
@@ -389,13 +391,37 @@ body{font-family:'Pretendard Variable',Pretendard,-apple-system,'Apple SD Gothic
     <div class="screen" id="s-waiting">
       <div class="g20"></div>
       <div class="kicker">대기 안내</div>
-      <div class="step-title">늦는 플래버가<br>있다면 20분 대기</div>
-      <div class="step-desc">최소 인원이 모일 때까지 현장에서 미니 게임을 진행하고, 20분 이후 현장 취소 혹은 미니 게임 진행 여부를 결정해요.</div>
+      <div class="step-title">늦는 플래버가<br>있다면</div>
       <div class="g20"></div>
-      <div class="verdict-rows">
-        <div class="verdict-row success"><div class="vr-tag success">최소 이상</div><div class="vr-title">정상 진행</div></div>
-        <div class="verdict-row warn"><div class="vr-tag warn">최소 미만</div><div class="vr-title">미니 게임 전환</div><div class="vr-desc">5v5·6v6만 가능</div></div>
-        <div class="verdict-row error"><div class="vr-tag error">최소 미만</div><div class="vr-title">현장 취소·중단</div><div class="vr-desc">리포트 작성</div></div>
+      <div class="seq-list">
+        <div class="seq-item">
+          <div class="seq-left"><div class="seq-badge" style="cursor:default;">1</div><div class="seq-line"></div></div>
+          <div class="seq-right">
+            <div class="seq-title">20분까지 대기해요</div>
+            <div class="seq-desc">늦는 플래버가 있다면 매치 시작 후 20분까지 대기해요.</div>
+          </div>
+        </div>
+        <div class="seq-item">
+          <div class="seq-left"><div class="seq-badge" style="cursor:default;">2</div><div class="seq-line"></div></div>
+          <div class="seq-right">
+            <div class="seq-title">미니 게임 또는 대기</div>
+            <div class="seq-desc">최소 인원이 모일 때까지 현장에서 미니 게임을 진행하거나 현장에서 기다려요.</div>
+          </div>
+        </div>
+        <div class="seq-item">
+          <div class="seq-left"><div class="seq-badge" style="cursor:default;background:#0BA260;">3</div><div class="seq-line"></div></div>
+          <div class="seq-right">
+            <div class="seq-title" style="color:#0BA260;">최소 인원이 모이면 정상 진행</div>
+            <div class="seq-desc">최소 인원이 충족되면 매치를 정상 진행해요.</div>
+          </div>
+        </div>
+        <div class="seq-item">
+          <div class="seq-left"><div class="seq-badge" style="cursor:default;background:#F04438;">4</div></div>
+          <div class="seq-right">
+            <div class="seq-title" style="color:#F04438;">20분 경과 후 진행 여부 결정</div>
+            <div class="seq-desc">지각자가 도착하지 않는다면, 20분 이후 현장 취소 혹은 미니 게임 진행 여부를 결정해요.</div>
+          </div>
+        </div>
       </div>
       <div class="spacer"></div>
     </div>
@@ -405,26 +431,7 @@ body{font-family:'Pretendard Variable',Pretendard,-apple-system,'Apple SD Gothic
       <div class="g20"></div>
       <div class="kicker">진행 결정</div>
       <div class="step-title">진행 여부를<br>결정해요</div>
-      <div class="step-desc">라이트 매니저 포함 도착 인원을 기준으로 매치 진행을 결정해요.</div>
       <div class="g16"></div>
-
-      <!-- 판정 기준 3열 -->
-      <div class="verdict-rows">
-        <div class="verdict-row success">
-          <div class="vr-tag success">최소 이상</div>
-          <div class="vr-title">정상 진행</div>
-        </div>
-        <div class="verdict-row warn">
-          <div class="vr-tag warn">최소 미만</div>
-          <div class="vr-title">미니 게임 전환</div>
-          <div class="vr-desc">5v5·6v6만 가능</div>
-        </div>
-        <div class="verdict-row error">
-          <div class="vr-tag error">최소 미만</div>
-          <div class="vr-title">현장 취소·중단</div>
-          <div class="vr-desc">리포트 작성</div>
-        </div>
-      </div>
 
       <!-- 진행 결정 버튼 -->
       <div style="display:flex;flex-direction:column;gap:8px;">
@@ -454,7 +461,7 @@ body{font-family:'Pretendard Variable',Pretendard,-apple-system,'Apple SD Gothic
           </div>
           <div style="flex:1">
             <div class="branch-label" style="color:#B45309;">늦는 플래버가 있어요</div>
-            <div class="branch-sub">참가자가 현장에 도착할 때까지 대기해요.</div>
+            <div class="branch-sub">늦는 플래버로 최소 인원이 부족하다면 현장에서 대기해요.</div>
           </div>
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M9 6l6 6-6 6" stroke="#D97706" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
         </button>
