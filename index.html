@@ -259,6 +259,16 @@ body{font-family:'Pretendard Variable',Pretendard,-apple-system,'Apple SD Gothic
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M9 6l6 6-6 6" stroke="#C8CDD4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
         </button>
       </div>
+      <button class="nav-row" onclick="goTo('s-refund')" style="margin-top:8px;">
+        <div class="nav-icon-wrap">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.8"/><path d="M12 8v4M12 16h.01" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+        </div>
+        <div style="flex:1">
+          <div class="nav-label">플래버 환불 규정</div>
+          <div class="nav-sub">개별 귀가 · 알림톡 유형별 기준</div>
+        </div>
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M9 6l6 6-6 6" stroke="#1570FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
       <div class="spacer"></div>
     </div>
 
@@ -328,25 +338,6 @@ body{font-family:'Pretendard Variable',Pretendard,-apple-system,'Apple SD Gothic
           </div>
         </div>
       </div>
-      <div class="g24"></div>
-      <div style="display:flex;align-items:center;gap:6px;margin-bottom:12px;">
-        <svg width="15" height="15" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke="#F04438" stroke-width="2"/><path d="M12 8v4M12 16h.01" stroke="#F04438" stroke-width="2" stroke-linecap="round"/></svg>
-        <div style="font-size:14px;font-weight:700;color:#191F28;letter-spacing:-.02em;">플래버 환불 규정</div>
-      </div>
-      <div class="refund-block" style="display:flex;flex-direction:column;gap:8px;">
-        <div style="display:flex;align-items:flex-start;gap:8px;"><span style="flex-shrink:0;color:#F04438;line-height:1.55;">•</span><div style="font-size:14px;font-weight:400;color:#191F28;line-height:1.55;letter-spacing:-.02em;">현장에 도착하지 않은 플래버는 환불되지 않아요.</div></div>
-        <div style="display:flex;align-items:flex-start;gap:8px;"><span style="flex-shrink:0;color:#F04438;line-height:1.6;">•</span><div style="font-size:14px;font-weight:400;color:#191F28;line-height:1.6;letter-spacing:-.02em;">매치가 현장 취소·진행 중/일부 시간 중단·인원 부족으로 인해 정상 진행되지 못한 시간이 있다면 매치 리포트에 남겨주세요. 리포트에 남겨주신 정상 진행되지 못한 시간 만큼 다음 날 오전 부분 환불돼요.</div></div>
-      </div>
-      <button class="nav-row" onclick="goTo('s-refund')">
-        <div class="nav-icon-wrap">
-          <svg width="15" height="15" viewBox="0 0 24 24" fill="none"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><path d="M13.73 21a2 2 0 0 1-3.46 0" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        </div>
-        <div style="flex:1">
-          <div class="nav-label">알림톡 유형별 개별 귀가 환불 기준</div>
-          <div class="nav-sub">알림톡 발송 시점에 따라 기준이 달라요</div>
-        </div>
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M9 6l6 6-6 6" stroke="#1570FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-      </button>
       <div class="spacer"></div>
     </div>
 
@@ -354,7 +345,13 @@ body{font-family:'Pretendard Variable',Pretendard,-apple-system,'Apple SD Gothic
     <div class="screen" id="s-refund">
       <div class="g20"></div>
       <div class="kicker">플래버 환불 규정</div>
-      <div class="step-title">알림톡 유형별<br>환불 기준</div>
+      <div class="step-title">환불 기준</div>
+      <div class="g16"></div>
+      <div class="refund-block" style="display:flex;flex-direction:column;gap:8px;margin-bottom:16px;">
+        <div style="display:flex;align-items:flex-start;gap:8px;"><span style="flex-shrink:0;color:#F04438;line-height:1.55;">•</span><div style="font-size:14px;font-weight:400;color:#191F28;line-height:1.55;letter-spacing:-.02em;">현장에 도착하지 않은 플래버는 환불되지 않아요.</div></div>
+        <div style="display:flex;align-items:flex-start;gap:8px;"><span style="flex-shrink:0;color:#F04438;line-height:1.6;">•</span><div style="font-size:14px;font-weight:400;color:#191F28;line-height:1.6;letter-spacing:-.02em;">매치가 현장 취소·진행 중/일부 시간 중단·인원 부족으로 인해 정상 진행되지 못한 시간이 있다면 매치 리포트에 남겨주세요. 리포트에 남겨주신 정상 진행되지 못한 시간 만큼 다음 날 오전 부분 환불돼요.</div></div>
+      </div>
+      <div style="font-size:13px;font-weight:700;color:#191F28;margin-bottom:12px;letter-spacing:-.02em;">알림톡 유형별 개별 귀가 환불 기준</div>
       <div style="margin-top:8px;display:flex;flex-direction:column;gap:8px;">
         <div style="display:flex;gap:8px;align-items:flex-start;font-size:13.5px;color:#191F28;line-height:1.65;"><span style="flex-shrink:0;">•</span><span>플래버가 알림톡을 수신한 시점에 따라 환불 기준이 달라져요.</span></div>
         <div style="display:flex;gap:8px;align-items:flex-start;font-size:13.5px;color:#191F28;line-height:1.65;"><span style="flex-shrink:0;">•</span><span>알림톡이 발송되지 않은 매치는 강수로 개별 귀가 시 참여하지 않은 시간만큼 환불돼요.</span></div>
@@ -397,14 +394,14 @@ body{font-family:'Pretendard Variable',Pretendard,-apple-system,'Apple SD Gothic
         <div class="seq-item">
           <div class="seq-left"><div class="seq-badge" style="cursor:default;">1</div><div class="seq-line"></div></div>
           <div class="seq-right">
-            <div class="seq-title">20분까지 대기해요</div>
-            <div class="seq-desc">최소 인원이 부족하다면 매치 시작 후 20분까지 기다려요.</div>
+            <div class="seq-title">늦는 플래버로 최소 인원이 부족하다면</div>
+            <div class="seq-desc">매치 시작 후 20분까지 기다려요.</div>
           </div>
         </div>
         <div class="seq-item">
           <div class="seq-left"><div class="seq-badge" style="cursor:default;">2</div><div class="seq-line"></div></div>
           <div class="seq-right">
-            <div class="seq-title">미니 게임 또는 대기</div>
+            <div class="seq-title">미니 게임 또는 몸풀기</div>
             <div class="seq-desc">최소 인원이 모일 때까지 현장에서 미니 게임을 진행하거나 기다려요.</div>
           </div>
         </div>
@@ -418,11 +415,21 @@ body{font-family:'Pretendard Variable',Pretendard,-apple-system,'Apple SD Gothic
         <div class="seq-item">
           <div class="seq-left"><div class="seq-badge" style="cursor:default;background:#F04438;color:#fff;border-color:#F04438;">4</div></div>
           <div class="seq-right">
-            <div class="seq-title" style="color:#F04438;">20분 경과 후 진행 여부 결정</div>
-            <div class="seq-desc">20분이 지나도 최소 인원이 모이지 않는다면 현장 취소 혹은 미니 게임 진행 여부를 결정해요.</div>
+            <div class="seq-title" style="color:#F04438;">매치 시작 20분 후에도 최소 인원이 모이지 않는다면</div>
+            <div class="seq-desc">현장 취소 혹은 미니 게임 진행 여부를 결정해요.</div>
           </div>
         </div>
       </div>
+      <button class="nav-row" onclick="goTo('s-refund')" style="margin-top:20px;">
+        <div class="nav-icon-wrap">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.8"/><path d="M12 8v4M12 16h.01" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+        </div>
+        <div style="flex:1">
+          <div class="nav-label">플래버 환불 규정</div>
+          <div class="nav-sub">개별 귀가 · 알림톡 유형별 기준</div>
+        </div>
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M9 6l6 6-6 6" stroke="#1570FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
       <div class="spacer"></div>
     </div>
 
@@ -435,6 +442,7 @@ body{font-family:'Pretendard Variable',Pretendard,-apple-system,'Apple SD Gothic
 
       <!-- 진행 결정 버튼 -->
       <div style="display:flex;flex-direction:column;gap:8px;">
+        <div style="font-size:11px;font-weight:700;color:#8B95A1;letter-spacing:.06em;padding:0 2px;">최소 인원이 모였다면</div>
         <button class="branch-btn brand" onclick="goToStep3('proceed')">
           <div class="branch-icon brand">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
@@ -455,6 +463,7 @@ body{font-family:'Pretendard Variable',Pretendard,-apple-system,'Apple SD Gothic
           </div>
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M9 6l6 6-6 6" stroke="#F04438" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
         </button>
+        <div style="font-size:11px;font-weight:700;color:#8B95A1;letter-spacing:.06em;padding:4px 2px 0;">최소 인원이 모이지 않았다면</div>
         <button class="branch-btn" style="background:#FFFBEB;border:2px solid #FDE68A;" onclick="goTo('s-waiting')">
           <div class="branch-icon" style="background:#D97706;">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke="#fff" stroke-width="2"/><path d="M12 6v6l4 2" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
@@ -652,6 +661,18 @@ body{font-family:'Pretendard Variable',Pretendard,-apple-system,'Apple SD Gothic
         </div>
       </div>
       <div class="g8"></div>
+
+      <!-- 환불 규정 링크 -->
+      <button class="nav-row" onclick="goTo('s-refund')" style="margin-bottom:8px;">
+        <div class="nav-icon-wrap">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.8"/><path d="M12 8v4M12 16h.01" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+        </div>
+        <div style="flex:1">
+          <div class="nav-label">플래버 환불 규정</div>
+          <div class="nav-sub">개별 귀가 · 알림톡 유형별 기준</div>
+        </div>
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M9 6l6 6-6 6" stroke="#1570FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
 
       <!-- 정산 기준 -->
       <div class="collapse-wrap">
