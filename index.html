@@ -387,30 +387,71 @@ body{font-family:'Pretendard Variable',Pretendard,-apple-system,'Apple SD Gothic
         <div class="collapse-body" id="cr-body">
           <div class="collapse-divider"></div>
 
-          <!-- 강수 예보 안내 카드 (파란 동그라미) -->
-          <div style="padding:16px;border-radius:14px;background:#F7F8FA;border:1px solid #ECEEF2;margin-bottom:10px;">
-            <div style="display:flex;align-items:center;gap:8px;margin-bottom:12px;">
-              <div style="width:8px;height:8px;border-radius:50%;background:#1570FF;flex-shrink:0;"></div>
-              <span style="font-size:13px;font-weight:700;color:#191F28;">강수 예보 안내</span>
-              <span style="font-size:12px;color:#6B7684;">4시간 이내 ~ 2시간 전 수신</span>
+          <!-- 강수 예보 안내 카드 -->
+          <div style="padding:16px;border-radius:14px;background:#fff;border:1.5px solid #ECEEF2;margin-bottom:10px;">
+            <div style="display:flex;align-items:center;gap:6px;margin-bottom:14px;">
+              <span style="font-size:13.5px;font-weight:700;color:#191F28;">강수 예보 안내</span>
+              <span style="font-size:12px;color:#8B95A1;font-weight:400;">매치 시작 4시간 이내 ~ 2시간 전</span>
             </div>
-            <div style="padding:12px 12px 8px;margin-bottom:10px;"><svg width="100%" viewBox="0 0 290 56" style="display:block"><line x1="14" y1="36" x2="276" y2="36" stroke="#D1D5DB" stroke-width="1.5" stroke-linecap="round"/><rect x="14" y="28" width="131" height="16" rx="8" fill="#E8F1FF"/><line x1="22" y1="36" x2="137" y2="36" stroke="#1570FF" stroke-width="3" stroke-linecap="round"/><circle cx="14" cy="36" r="3.5" fill="#fff" stroke="#1570FF" stroke-width="1.5"/><circle cx="145" cy="36" r="3.5" fill="#fff" stroke="#1570FF" stroke-width="1.5"/><circle cx="276" cy="36" r="3.5" fill="#1570FF" stroke="#1570FF" stroke-width="1.5"/><text x="14" y="52" fill="#8B95A1" font-size="10" font-weight="600" text-anchor="middle">4시간 전</text><text x="145" y="52" fill="#8B95A1" font-size="10" font-weight="600" text-anchor="middle">2시간 전</text><text x="276" y="52" fill="#8B95A1" font-size="10" font-weight="600" text-anchor="middle">매치 시작</text><text x="79" y="20" fill="#1570FF" font-size="10.5" font-weight="800" text-anchor="middle">수신 시간</text></svg></div>
-            <div style="font-size:12.5px;color:#6B7684;line-height:1.6;margin-bottom:10px;">구장 주소 기준 시간당 1mm 이상 강수 예보가 확인되면 발송돼요.</div>
-            <div style="height:1px;background:#ECEEF2;margin-bottom:10px;"></div>
-            <div style="font-size:13px;font-weight:700;color:#191F28;">→ 개별 귀가 시 환불 불가</div>
+            <div style="background:#F7F8FA;border-radius:10px;padding:14px 12px 12px;margin-bottom:12px;">
+              <svg width="100%" viewBox="0 0 290 68" style="display:block">
+                <!-- track -->
+                <line x1="20" y1="40" x2="270" y2="40" stroke="#D1D5DB" stroke-width="2" stroke-linecap="round"/>
+                <!-- active segment -->
+                <line x1="20" y1="40" x2="145" y2="40" stroke="#1570FF" stroke-width="3" stroke-linecap="round"/>
+                <!-- nodes -->
+                <circle cx="20" cy="40" r="5" fill="#1570FF"/>
+                <circle cx="145" cy="40" r="5" fill="#1570FF"/>
+                <circle cx="270" cy="40" r="5" fill="#1570FF" opacity=".3"/>
+                <!-- labels bottom -->
+                <text x="20" y="58" fill="#8B95A1" font-size="10" font-weight="500" text-anchor="middle">4시간 전</text>
+                <text x="145" y="58" fill="#8B95A1" font-size="10" font-weight="500" text-anchor="middle">2시간 전</text>
+                <text x="270" y="58" fill="#8B95A1" font-size="10" font-weight="500" text-anchor="middle">매치 시작</text>
+                <!-- 수신 시간 label top-center of active range -->
+                <text x="82" y="24" fill="#1570FF" font-size="10.5" font-weight="700" text-anchor="middle">수신 시간</text>
+              </svg>
+            </div>
+            <div style="font-size:12.5px;color:#6B7684;line-height:1.6;margin-bottom:14px;">구장 주소 기준 시간당 1mm 이상 강수 예보가 확인되면 발송돼요.</div>
+            <!-- 결과 pill -->
+            <div style="display:flex;align-items:center;gap:8px;background:#FFF3F2;border-radius:10px;padding:11px 14px;">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" fill="#F04438"/><path d="M8 8l8 8M16 8l-8 8" stroke="#fff" stroke-width="2.2" stroke-linecap="round"/></svg>
+              <span style="font-size:13px;font-weight:700;color:#F04438;">개별 귀가 시 환불 불가</span>
+            </div>
           </div>
 
-          <!-- 강수 예보 변동 안내 카드 (주황 동그라미) -->
-          <div style="padding:16px;border-radius:14px;background:#F7F8FA;border:1px solid #ECEEF2;margin-bottom:4px;">
-            <div style="display:flex;align-items:center;gap:8px;margin-bottom:12px;">
-              <div style="width:8px;height:8px;border-radius:50%;background:#D97706;flex-shrink:0;"></div>
-              <span style="font-size:13px;font-weight:700;color:#191F28;">강수 예보 변동 안내</span>
-              <span style="font-size:12px;color:#6B7684;">매치 시작 2시간 이내 수신</span>
+          <!-- 강수 예보 변동 안내 카드 -->
+          <div style="padding:16px;border-radius:14px;background:#fff;border:1.5px solid #ECEEF2;margin-bottom:4px;">
+            <div style="display:flex;align-items:center;gap:6px;margin-bottom:14px;">
+              <span style="font-size:13.5px;font-weight:700;color:#191F28;">강수 예보 변동 안내</span>
+              <span style="font-size:12px;color:#8B95A1;font-weight:400;">매치 시작 1시간 30분 이내</span>
             </div>
-            <div style="padding:12px 12px 8px;margin-bottom:10px;"><svg width="100%" viewBox="0 0 290 56" style="display:block"><line x1="14" y1="36" x2="276" y2="36" stroke="#D1D5DB" stroke-width="1.5" stroke-linecap="round"/><rect x="145" y="28" width="131" height="16" rx="8" fill="#FEF3C7"/><line x1="153" y1="36" x2="268" y2="36" stroke="#D97706" stroke-width="3" stroke-linecap="round"/><circle cx="14" cy="36" r="3.5" fill="#fff" stroke="#D97706" stroke-width="1.5"/><circle cx="145" cy="36" r="3.5" fill="#fff" stroke="#D97706" stroke-width="1.5"/><circle cx="276" cy="36" r="3.5" fill="#D97706" stroke="#D97706" stroke-width="1.5"/><text x="14" y="52" fill="#8B95A1" font-size="10" font-weight="600" text-anchor="middle">4시간 전</text><text x="145" y="52" fill="#8B95A1" font-size="10" font-weight="600" text-anchor="middle">2시간 전</text><text x="276" y="52" fill="#8B95A1" font-size="10" font-weight="600" text-anchor="middle">매치 시작</text><text x="211" y="20" fill="#D97706" font-size="10.5" font-weight="800" text-anchor="middle">수신 시간</text></svg></div>
-            <div style="font-size:12.5px;color:#6B7684;line-height:1.6;margin-bottom:10px;">구장 주소 기준 시간당 1mm 이상 강수 예보가 확인되면 발송돼요.</div>
-            <div style="height:1px;background:#ECEEF2;margin-bottom:10px;"></div>
-            <div style="font-size:13px;font-weight:700;color:#191F28;">→ 개별 귀가 시 미참여 시간만큼 환불</div>
+            <div style="background:#F7F8FA;border-radius:10px;padding:14px 12px 12px;margin-bottom:12px;">
+              <svg width="100%" viewBox="0 0 290 76" style="display:block">
+                <!-- track -->
+                <line x1="20" y1="40" x2="270" y2="40" stroke="#D1D5DB" stroke-width="2" stroke-linecap="round"/>
+                <!-- active segment (오른쪽) -->
+                <line x1="183" y1="40" x2="270" y2="40" stroke="#F04438" stroke-width="3" stroke-linecap="round"/>
+                <!-- nodes -->
+                <circle cx="20" cy="40" r="5" fill="#D1D5DB"/>
+                <circle cx="145" cy="40" r="5" fill="#D1D5DB"/>
+                <circle cx="183" cy="40" r="5" fill="#F04438"/>
+                <circle cx="270" cy="40" r="5" fill="#F04438"/>
+                <!-- labels bottom -->
+                <text x="20" y="58" fill="#8B95A1" font-size="10" font-weight="500" text-anchor="middle">4시간 전</text>
+                <text x="145" y="58" fill="#8B95A1" font-size="10" font-weight="500" text-anchor="middle">2시간 전</text>
+                <text x="270" y="58" fill="#8B95A1" font-size="10" font-weight="500" text-anchor="middle">매치 시작</text>
+                <!-- 1시간 30분 이내 label below active node -->
+                <text x="183" y="72" fill="#F04438" font-size="9.5" font-weight="600" text-anchor="middle">1시간 30분 이내</text>
+                <!-- 수신 시간 label top-right -->
+                <text x="226" y="24" fill="#F04438" font-size="10.5" font-weight="700" text-anchor="middle">수신 시간</text>
+              </svg>
+            </div>
+            <div style="font-size:12.5px;color:#6B7684;line-height:1.6;margin-bottom:14px;">구장 주소 기준 시간당 1mm 이상 강수 예보가 확인되면 발송돼요.</div>
+            <!-- 결과 pill -->
+            <div style="display:flex;align-items:center;gap:8px;background:#ECFDF3;border-radius:10px;padding:11px 14px;">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" fill="#0BA260"/><path d="M7.5 12.5l3 3 6-6" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <span style="font-size:13px;font-weight:700;color:#0BA260;">개별 귀가 시 미참여 시간만큼 환불</span>
+            </div>
           </div>
         </div>
       </div>
